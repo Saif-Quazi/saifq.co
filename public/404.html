@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Not Found</title>
+    <title>404 | Page Not Found</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-    
+    <style>
+    main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+        #fourOfour {
+            font-size: 128px;
+            font-weight: 200;
+            text-align: center;
+            margin: 20px;
+            text-shadow: 0px 0px 10px hsla(0, 0%, 100%, 0.3),
+                        0px 0px 20px hsla(0, 0%, 100%, 0.2),
+                        0px 0px 30px hsla(0, 0%, 100%, 0.1);
+        }
+        
+        #info {
+            font-size: 20px;
+            font-weight: 400;
+            text-align: center;
+            margin: 20px;
+        }
+        
+        #backHome {
+            width: 150px;
+            height: 40px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            border: var(--debugBorder);
+            border-radius: 15px;
+            cursor: pointer;
+            
+        }
+        #backHome:hover {
+            background-color: hsla(181, 77%, 59%, 0.3);
+            color: #fff;
+        }
+    </style>
+    <main>
+        <h1 id="fourOfour">404</h1>
+        <p id="info">The page you are looking for does not exist or has been moved</p>
+        <a href="/" id="backHome">Back to Home</a>
+    </main>
 </body>
 </html>
