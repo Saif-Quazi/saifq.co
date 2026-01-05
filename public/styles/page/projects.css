@@ -1,11 +1,13 @@
 #pageTitle {
+    height: 40px;
+    margin: 40px;
     font-size: 24px;
     font-weight: bold;
-    margin: 40px;
 }
 
 #projectHolder {
     width: 100vw;
+    height: calc(100vh - 120px);
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -25,14 +27,20 @@
     border-radius: 20px;
     background: #1e2933;
     z-index: 0;
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
 }
 
-.project::before {
+/*.project::before {
     content: "";
     position: absolute;
     inset: -2px;
     border-radius: inherit;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
     z-index: -1;
 }
 
@@ -40,15 +48,20 @@
     .project::before {
         inset: 0;
         padding: 2px;
-        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        background: linear-gradient(
+            135deg,
+            var(--primary-color),
+            var(--secondary-color)
+        );
         border-radius: inherit;
 
-        mask: linear-gradient(#fff 0 0) content-box,
-              linear-gradient(#fff 0 0);
+        mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
         mask-composite: exclude;
         -webkit-mask-composite: xor;
     }
-}
+}*/
 
 .project:hover {
     background-color: #304050;
@@ -96,10 +109,127 @@
     font-weight: 200;
     text-transform: uppercase;
     border-radius: 15px;
-    background:  hsla(181, 77%, 59%, 0.3);
+    background: hsla(181, 77%, 59%, 0.3);
 }
 
 .projLink:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+    background: hsla(181, 77%, 59%, 0.5);
+}
+
+#modal {
+    width: 90vw;
+    height: 60vh;
+    max-width: 800px;
+    max-height: 495px;
+    padding: 40px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    background: hsla(0, 0%, 20%, 0.6);
+    backdrop-filter: blur(10px);
+    z-index: 1001;
+    opacity: 0;
+}
+
+#modal.active {
+    opacity: 1;
+}
+
+#modalOverlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+#modalOverlay.active {
+    opacity: 1;
+}
+
+.closeBtn {
+    width: 45px;
+    height: 45px;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    background: hsla(0, 0%, 20%, 0.8);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.closeBtn:hover {
+    background: hsla(0, 0%, 20%, 0.9);
+}
+
+#projImgSlider {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.mProjImg {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 30px;
+    scroll-snap-align: start;
+}
+
+#mProjInfo {
+    width: 90vw;
+    height: 15vh;
+    max-width: 800px;
+    max-height: 295px;
+    padding: 20px;
+    position: absolute;
+    bottom: calc(-15vh - 10px);
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0px 0px 30px 30px;
+    z-index: 0;
+    background: hsla(0, 0%, 20%, 0.6);
+}
+
+.mProjLink {
+    width: 150px;
+    height: 35px;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 16px;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 15px;
+    background: hsla(181, 77%, 59%, 0.3);
+}
+
+.mProjLink:hover {
     cursor: pointer;
     color: var(--primary-color);
     background: hsla(181, 77%, 59%, 0.5);
