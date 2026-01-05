@@ -1,0 +1,19 @@
+[[redirects]]
+  from = "/projects"
+  to = "/projects.html"
+  status = 200
+  
+[[redirects]]
+  from = "/portfolio"
+  to = "/projects.html"
+  status = 200
+
+[[redirects]]
+    from = "/contact"
+    to = "/contact.html"
+    status = 200
+    
+[[redirects]]
+    from = "/collab"
+    to = "/contact.html"
+    status = 200

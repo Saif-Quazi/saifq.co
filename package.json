@@ -1,0 +1,10 @@
+{
+  "name": "saifq.co",
+  "private": true,
+  "scripts": {
+    "dev": "npx live-server public --port=3000 --open=/ --quiet"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

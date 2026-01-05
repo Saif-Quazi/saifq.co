@@ -1,3 +1,42 @@
-/* main {
-    background: var(--accent-color);
-} */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#name {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+#description {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--text-color);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#btnHolder {
+    display: flex;
+    gap: 20px;
+}
+
+.mainBtns {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 15px;
+    background: hsla(181, 77%, 59%, 0.7);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.mainBtns:hover {
+    box-shadow: 4px 4px 0 hsla(181, 77%, 59%, 0.3);
+    transform: translate(-4px, -4px);
+}

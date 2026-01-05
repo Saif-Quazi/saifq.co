@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #44E5E7;
-    --secondary-color: #44e795;
-    --accent-color: #FF6A3D;
-    --text-color: #ddd;
-    --text-color-secondary: #bbb;
+    --primary-color: hsl(185, 75%, 60%);
+    --secondary-color: hsl(150, 75%, 60%);
+    --accent-color: hsl(14, 100%, 62%);
+    --text-color: hsl(0, 0%, 90%);
+    --text-color-secondary: hsl(0, 0%, 80%);
     --basic-border: 1px solid hsla(0, 0%, 100%, 0.8);
-    --normal-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    --normal-shadow: 2px 2px 6px hsla(0, 0%, 0%, 0.2);
 
     --debugBorder: 1px solid white;
 }
@@ -32,6 +32,7 @@ html, body {
     margin: 0;
     padding: 0;
     background: hsl(0, 0%, 10%);
+    overflow: hidden;
 }
 
 main {
@@ -146,7 +147,7 @@ nav {
 .navBtns:hover {
     cursor: pointer;
     color: var(--primary-color);
-    background: rgba(68, 229, 231, 0.3);
+    background: hsla(181, 77%, 59%, 0.3);
 }
 
 #socialText {
