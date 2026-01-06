@@ -4,8 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Saif Quazi | Contact</title>
-        
-        <meta name="description" content="//HERE" />
+
+        <meta
+            name="description"
+            content="Get in touch with Saif Quazi. Contact me for software development opportunities, collaborations, or any inquiries."
+        />
         <meta
             name="robots"
             content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
@@ -15,24 +18,42 @@
 
         <!-- Additional SEO -->
         <meta name="author" content="Saif Quazi" />
-        <meta name="keywords" content="//HERE" />
+        <meta
+            name="keywords"
+            content="contact Saif Quazi, get in touch, software developer contact, hire developer, collaboration, inquiries, email Saif Quazi"
+        />
         <meta name="language" content="en" />
         <meta name="rating" content="general" />
         <meta name="revisit-after" content="7 days" />
 
         <!-- Social / Open Graph -->
-        <meta property="og:title" content="//HERE" />
-        <meta property="og:description" content="//HERE" />
-        <meta property="og:image" content="//HERE" />
-        <meta property="og:url" content="//HERE" />
+        <meta property="og:title" content="Contact Saif Quazi | Get In Touch" />
+        <meta
+            property="og:description"
+            content="Get in touch with Saif Quazi. Contact me for software development opportunities, collaborations, or any inquiries."
+        />
+        <meta
+            property="og:image"
+            content="https://saifq.co/assets/sq-logo.png"
+        />
+        <meta property="og:url" content="https://saifq.co/contact.html" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="//HERE" />
+        <meta property="og:site_name" content="Saif Quazi Contact" />
 
         <!-- Twitter Cards -->
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="//HERE" />
-        <meta name="twitter:description" content="//HERE" />
-        <meta name="twitter:image" content="//HERE" />
+        <meta
+            name="twitter:title"
+            content="Contact Saif Quazi | Get In Touch"
+        />
+        <meta
+            name="twitter:description"
+            content="Get in touch with Saif Quazi. Contact me for software development opportunities, collaborations, or any inquiries."
+        />
+        <meta
+            name="twitter:image"
+            content="https://saifq.co/assets/sq-logo.png"
+        />
         <meta name="twitter:site" content="@YourTwitterHandle" />
 
         <!-- Fonts and Icons -->
@@ -48,9 +69,6 @@
             defer
         ></script>
 
-        <!-- EmailJS -->
-        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
         <!-- CSS -->
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="stylesheet" href="styles/responsive.css" />
@@ -60,12 +78,28 @@
         <nav-menu></nav-menu>
         <menu-btn></menu-btn>
         <main>
-            <form id="contactForm">
+            <form
+                id="contactForm"
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+            >
+                <input type="hidden" name="form-name" value="contact" />
+
+                <!-- Hidden honeypot field for spam protection -->
+                <p style="display: none">
+                    <label
+                        >Don't fill this out if you're human:
+                        <input name="bot-field"
+                    /></label>
+                </p>
+
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required />
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required />
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
@@ -75,6 +109,5 @@
         </main>
         <script src="client/components.js"></script>
         <script src="client/main.js"></script>
-        <script src="client/form.js"></script>
     </body>
 </html>
