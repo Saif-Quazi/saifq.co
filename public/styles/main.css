@@ -35,6 +35,25 @@ html, body {
     overflow: hidden;
 }
 
+#screenSizeWarning {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999999;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: hsla(0, 0%, 10%, 0.8);
+    backdrop-filter: blur(20px);
+}
+
+#warningText {
+    padding: 10px;
+}
+
 main {
     width: 100vw;
     min-height: 100vh;
@@ -93,6 +112,7 @@ aside {
     background: hsla(0, 0%, 0%, 0.5);
     backdrop-filter: blur(8px);
     user-select: none;
+    transition: right 0.3s linear;
 }
 
 aside.active {

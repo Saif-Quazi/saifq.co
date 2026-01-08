@@ -1,7 +1,7 @@
 class NavMenu extends HTMLElement {
-    constructor() {
-        super();
-        this.innerHTML = `
+  constructor() {
+    super();
+    this.innerHTML = `
         <aside>
             <nav>
                 <p id="menuTitle">MENU</p>
@@ -25,35 +25,46 @@ class NavMenu extends HTMLElement {
             </nav>
         </aside>
         `;
-    }
+  }
 }
 
-customElements.define('nav-menu', NavMenu);
-
 class MenuBtn extends HTMLElement {
-    constructor() {
-        super();
-        this.innerHTML = `
+  constructor() {
+    super();
+    this.innerHTML = `
         <div id="menuBtnHolder">
             <div class="line" id="top"></div>
             <div class="line" id="middle"></div>
             <div class="line" id="bottom"></div>
         </div>
         `;
-        let isAnimating = false;
+    let isAnimating = false;
 
-        document.getElementById('menuBtnHolder').addEventListener('click', () => {
-            if (isAnimating) return;
-            
-            isAnimating = true;
-            document.getElementById('menuBtnHolder').classList.toggle('active');
-            document.querySelector('aside').classList.toggle('active');
-            
-            setTimeout(() => {
-                isAnimating = false;
-            }, 300);
-        });
-    }
+    document.getElementById("menuBtnHolder").addEventListener("click", () => {
+      if (isAnimating) return;
+
+      isAnimating = true;
+      document.getElementById("menuBtnHolder").classList.toggle("active");
+      document.querySelector("aside").classList.toggle("active");
+
+      setTimeout(() => {
+        isAnimating = false;
+      }, 300);
+    });
+  }
 }
 
-customElements.define('menu-btn', MenuBtn);
+class ScreenSizeWarning extends HTMLElement {
+  constructor() {
+    super();
+    this.innerHTML = `
+          <div id="screenSizeWarning">
+              <p id="warningText">Please use a larger screen to view content comfortably.</p>
+          </div>
+        `;
+  }
+}
+
+customElements.define("nav-menu", NavMenu);
+customElements.define("menu-btn", MenuBtn);
+customElements.define("screensize-warning", ScreenSizeWarning);

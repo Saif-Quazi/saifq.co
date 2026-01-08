@@ -71,10 +71,11 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="styles/main.css" />
-        <link rel="stylesheet" href="styles/responsive.css" />
         <link rel="stylesheet" href="styles/page/contact.css" />
+        <link rel="stylesheet" href="styles/responsive.css" />
     </head>
     <body>
+        <screensize-warning></screensize-warning>
         <nav-menu></nav-menu>
         <menu-btn></menu-btn>
         <main>
@@ -94,17 +95,35 @@
                         <input name="bot-field"
                     /></label>
                 </p>
-
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required />
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required />
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send</button>
+                <h1 id="formTitle">Get in touch with me</h1>
+                <p id="formSubtitle">Projects, collab, and opportunities</p>
+                <input
+                    type="text"
+                    class="formFields"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                    maxlength="100"
+                />
+                <input
+                    type="email"
+                    class="formFields"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                    maxlength="100"
+                />
+                <textarea
+                    class="formFields"
+                    id="message"
+                    name="message"
+                    placeholder="What would you like to discuss?"
+                    required
+                    maxlength="500"
+                ></textarea>
+                <button id="submitBtn" type="submit">Submit</button>
             </form>
         </main>
         <script src="client/components.js"></script>

@@ -1,0 +1,36 @@
+@media (max-width: 319px) or (max-height: 499px) {
+    #screenSizeWarning {
+        display: flex;
+    }
+}
+
+
+/* Projects Page */
+
+@media (max-width: 400px) {
+    .project {
+        scale: 0.9;
+    }
+}
+
+
+/* Contact Page */
+
+@media (min-width: 600px) and (min-height: 650px) {
+    #formTitle {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    #formSubtitle {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .formFields {
+        font-size: 14px;
+        margin: 20px;
+    }
+    #submitBtn {
+        font-size: 16px;
+        margin: 20px;
+    }
+}
