@@ -1,5 +1,5 @@
 const CACHE_NAME = 'cache-v1';
-const ASSETS_TO_CACHE = ['assets/SQ-Circle-Icon.png'];
+const ASSETS_TO_CACHE = ['assets/SQ-Circle-Icon.png', 'assets/projects/saifq.co.png', 'assets/projects/slcuts.co.png'];
 
 self.addEventListener('install', event => {
     event.waitUntil(
