@@ -75,6 +75,7 @@
         <link rel="stylesheet" href="styles/responsive.css" />
     </head>
     <body>
+        <canvas id="particles"></canvas>
         <screensize-warning></screensize-warning>
         <nav-menu></nav-menu>
         <menu-btn></menu-btn>
@@ -100,7 +101,7 @@
                 <input
                     type="text"
                     class="formFields"
-                    id="name"
+                    id="formName"
                     name="name"
                     placeholder="Your Name"
                     required
@@ -109,7 +110,7 @@
                 <input
                     type="email"
                     class="formFields"
-                    id="email"
+                    id="formEmail"
                     name="email"
                     placeholder="Your Email"
                     required
@@ -117,7 +118,7 @@
                 />
                 <textarea
                     class="formFields"
-                    id="message"
+                    id="formMessage"
                     name="message"
                     placeholder="What would you like to discuss?"
                     required
@@ -128,5 +129,6 @@
         </main>
         <script src="client/components.js"></script>
         <script src="client/main.js"></script>
+        <script src="client/particles.js"></script>
     </body>
 </html>

@@ -1,7 +1,7 @@
 const projectHolder = document.getElementById("projectHolder");
 let projects = [
   {
-    image: "https://placehold.co/1920x1080",
+    image: "assets/projects/saifq.co.png",
     name: "Saifq.co | Personal Portfolio Site",
     description:
       "A personal portfolio site built using HTML, CSS, and JavaScript.",
@@ -10,30 +10,30 @@ let projects = [
     isDemo: false,
   },
   {
-    image: "https://placehold.co/250x150",
-    name: "Slcuts.co | Editing Agency",
+    image: "assets/projects/slcuts.co.png",
+    name: "SLCuts.co | Editing Agency",
     description:
-      "An Editing and thumbnail design agency focussing on content creators on YouTube.",
+      "YouTube growth and management services",
     githubRepo: "https://github.com/Saif-Quazi/slcuts/",
     demoLink: "https://slcuts.co/",
     isDemo: false,
   },
-  {
-    image: "https://placehold.co/250x150",
-    name: "Project 3",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    githubRepo: "https://github.com/Saif-Quazi",
-    demoLink: "https://example.com",
-    isDemo: true,
-  },
-  {
-    image: "https://placehold.co/250x150",
-    name: "Project 4",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    githubRepo: "https://github.com/Saif-Quazi",
-    demoLink: "https://example.com",
-    isDemo: true,
-  },
+  // {
+  //   image: "https://placehold.co/250x150",
+  //   name: "Project 3",
+  //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  //   githubRepo: "https://github.com/Saif-Quazi",
+  //   demoLink: "https://example.com",
+  //   isDemo: true,
+  // },
+  // {
+  //   image: "https://placehold.co/250x150",
+  //   name: "Project 4",
+  //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  //   githubRepo: "https://github.com/Saif-Quazi",
+  //   demoLink: "https://example.com",
+  //   isDemo: true,
+  // },
 ];
 
 function generateProjects() {

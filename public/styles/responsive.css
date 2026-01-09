@@ -4,6 +4,44 @@
     }
 }
 
+/* Main Page */
+
+@media (min-width: 350px) {
+    #description {
+        margin-inline: 20px;
+    }
+    .mainBtns {
+        width: 140px;
+    }
+}
+
+@media (min-width: 500px) or (min-height: 550px) {
+    .mainBtns {
+        width: 160px;
+    }
+}
+
+@media (min-width: 600px) and (min-height: 600px) {
+    #name {
+        font-size: 48px;
+    }
+    #description {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1000px) and (min-height: 1000px) {
+    #name {
+        font-size: 64px;
+    }
+    #description {
+        font-size: 32px;
+    }
+    .mainBtns {
+        width: 180px;
+        font-size: 18px;
+    }
+}
 
 /* Projects Page */
 
@@ -16,7 +54,7 @@
 
 /* Contact Page */
 
-@media (min-width: 600px) and (min-height: 650px) {
+@media (min-width: 600px) and (min-height: 550px) {
     #formTitle {
         font-size: 24px;
         margin-bottom: 20px;

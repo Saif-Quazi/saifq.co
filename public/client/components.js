@@ -7,8 +7,8 @@ class NavMenu extends HTMLElement {
                 <p id="menuTitle">MENU</p>
                 <div id="navBtnsHolder">
                     <button class="navBtns" onclick="window.location.href='/'">Home</button>
-                    <button class="navBtns" onclick="window.location.href='/projects.html'">Projects</button>
-                    <button class="navBtns" onclick="window.location.href='/contact.html'">Contact</button>
+                    <button class="navBtns" onclick="window.location.href='/projects'">Projects</button>
+                    <button class="navBtns" onclick="window.location.href='/contact'">Contact</button>
                 </div>
                 <p id="socialText">Find me on</p>
                 <div id="socials">
