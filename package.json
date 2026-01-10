@@ -2,9 +2,9 @@
   "name": "saifq.co",
   "private": true,
   "scripts": {
-    "dev": "npx live-server public --port=3000 --open=/ --quiet"
+    "dev": "npx http-server public -p 3000 -o"
   },
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "http-server": "^14.1.1"
   }
 }
