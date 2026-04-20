@@ -31,7 +31,7 @@ let projects = [
     image: "assets/projects/systemmonitor.png",
     name: "System Monitor | Widget",
     description:
-      "A lightweight and minimal Python desktop widget that displays real-time CPU, RAM, and GPU usage." < br > "(windows only!)",
+      "A lightweight and minimal Python desktop widget that displays real-time CPU, RAM, and GPU usage. <br>(windows only!)",
     githubRepo: "https://github.com/Saif-Quazi/SystemMonitor",
     demoLink: "https://github.com/Saif-Quazi/SystemMonitor/releases/tag/v1.0.0",
     isDemo: true,
@@ -40,7 +40,7 @@ let projects = [
     image: "assets/projects/timezones.png",
     name: "TimeZones | Widget",
     description:
-      "A simple timezone widget made with python." < br > "Display up to 9 cities at once with auto-grid system!" < br > "Customize which cities and what order from settings window",
+      "A simple timezone widget made with python. <br>Display up to 9 cities at once with auto-grid system! <br>Customize which cities and what order from settings window",
     githubRepo: "https://github.com/Saif-Quazi/TimeZones",
     demoLink: "https://github.com/Saif-Quazi/TimeZones/releases/tag/v1.1.1",
     isDemo: true,
